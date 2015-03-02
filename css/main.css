@@ -49,5 +49,10 @@ p {
     text-align: left;
 }
 .done {
-    position: absolute;
+   margin: 10px 10% 10px 10%;
+padding: 20px;
+}
+
+.added {
+    background-color: white;
 }
