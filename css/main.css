@@ -1,72 +1,53 @@
-.title{
+.title {
     font-size: 2rem;
     text-align: center;
     margin: 1rem;
 }
-    
-    
 .js-highlight {
     color: grey;
     text-decoration: line-through;
 }
-
 .to-do-list {
     background-color: #dfdfdf;
     border: 1.5px solid #aeaeae;
     border-radius: 10px;
     margin: 10px;
-    
 }
-
 button {
     border-radius: 5px;
     border: 1.5px solid #aeaeae;
     font-family: serif;
-    padding: 10px 10% 10px 10%;
+    padding: 10px 2% 10px 2%;
     font-size: 1rem;
 }
-
 input {
     border-radius: 5px;
     border: 1.5px solid #aeaeae;
     padding: 10px 10% 10px 10%;
-
 }
-
 .form {
     margin: none;
     padding: none;
 }
-
 body {
-    background-color: #ccc9c9 ;
+    background-color: #ccc9c9;
 }
-
 .list {
     background-color: white;
     margin: none;
     padding: none;
     list-style-type: none;
 }
-
-.do {
-    text-decoration: none;
+.add {
+    list-style: none;
 }
-
-.added {
-    margin: none;
-}
-
 .top {
     padding: 1rem;
-        text-align: center;
-
+    text-align: center;
 }
-
 p {
     text-align: left;
 }
-
 .done {
-    background-color: red;
+    position: absolute;
 }
