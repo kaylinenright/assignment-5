@@ -1,24 +1,31 @@
 var $form = $("form");
-var $toDoList = $("#to-do-list");
-var $list = $(".list");
-var $li = $("<li>");
+var $item = $(".item");
+var $add = $(".add");
+var $button = $(".addbtn");
 
 $form.on("submit", function (e) {
-    var $li = $("<li>");
-    var $x = $("<p>").html($list.val())
-
     e.preventDefault();
-    $li.append($toDoList.val()+ " x")
-    $list.append($li);
+    
+    var $addValue = $add.val();
+    var $li = $("<li>");
+    var $addH2 = $("<h2>").html($item.val());
+    var $button = ("<button>");
+    
+    $button.html('&#x2717');
+    $button.addClass("done");
+    
+    $button.on("click", function () {
+        $li.remove();
+})
+       $li.append($addH2);
+        $add.append($li);
+        $addH2.append($button);            
 });    
     
     
-$li.on("click","li", function (e) {
-    console.log("Clicked on the LI");
- });
-
-
-
+$add.on("click","li", function () {
+$(this).toggleClass("js-highlight");
+});
 
 
 
